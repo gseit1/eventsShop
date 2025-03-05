@@ -35,8 +35,9 @@
        
     </div>
     
-    <div class="steps">
-        <h2>Γρήγορο,εύκολο και αποτελεσματικό!</h2>
+ <div class="steps">
+    <h2>Γρήγορο, εύκολο και αποτελεσματικό!</h2>
+    <div class="steps-container">
         <div class="step">
             <img src="images/templatesIcon.gif" alt="Step 1: Choose a Design">
             <h3>Διάλεξε το σχέδιο!</h3>
@@ -53,6 +54,8 @@
             <p>Στείλτε τις προσκλήσεις και συγκεντρώστε τους καλεσμένους σας.</p>
         </div>
     </div>
+    
+</div>
     
     <!-- Templates -->
     <section class="container my-6">
@@ -76,7 +79,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Βάπτιση</h5>
                         <p class="card-text">Δημιουργήστε το τέλειο προσκλητήριο για την βάπτιση σας.</p>
-                        <a href="wedding.html" class="btn btn-primary">Δείτε Περισσότερα</a>
+                        <a href="baftisi.html" class="btn btn-primary">Δείτε Περισσότερα</a>
                     </div>
                 </div>
             </div>
@@ -87,7 +90,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Πάρτυ</h5>
                         <p class="card-text">Δημιουργήστε το τέλειο προσκλητήριο για το πάρτυ γενεθλίων σας.</p>
-                        <a href="wedding.html" class="btn btn-primary">Δείτε Περισσότερα</a>
+                        <a href="genethlia.html" class="btn btn-primary">Δείτε Περισσότερα</a>
                     </div>
                 </div>
             </div>
@@ -100,7 +103,8 @@
         <div class="row">
             <!-- Left Side (Φόρμα) -->
             <div class="col-md-6">
-                <form id="contactForm" method="POST" action="https://formspree.io/f/mnqzpzek">
+                <form id="contactForm" method="POST" data-netlify="true" name="contact">
+                    <input type="hidden" name="form-name" value="contact">
                     <div class="form-group">
                         <label for="name">Όνομα</label>
                         <input type="text" class="form-control" id="name" name="name" required>
@@ -124,7 +128,7 @@
                     <button type="submit" class="btn btn-primary">Αποστολή</button>
                 </form>
             </div>
-
+    
             <!-- Right Side (Γιατί να μας εμπιστευτείτε) -->
             <div class="col-md-6">
                 <h3>Γιατί να μας εμπιστευτείτε;</h3>
