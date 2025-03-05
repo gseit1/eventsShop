@@ -1,0 +1,108 @@
+/* Hero Section */
+
+.hero {
+    background: linear-gradient(to right, #007bff, #0056b3);
+}
+
+.hero h1 {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+/* Hover Effect for Templates */
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit:contain;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Φόρμα και Text Section Flexbox */
+section {
+    margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+    .row {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .col-md-4 {
+        margin-bottom: 30px; /* Προσθήκη κενών κάτω από τις κάρτες στα κινητά */
+    }
+}
+
+/* Στυλ για την Κάρτα της Φόρμας */
+.card-body {
+    padding: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Αύξηση κενών μεταξύ των sections */
+header {
+    margin-bottom: 80px; /* Αύξηση απόστασης κάτω από το header */
+}
+
+section {
+    margin-top: 60px;  /* Αύξηση απόστασης από την προηγούμενη ενότητα */
+    margin-bottom: 60px;  /* Αύξηση απόστασης προς την επόμενη ενότητα */
+}
+
+/* Επιπλέον, αν θέλεις να προσθέσεις περισσότερο κενό κάτω από το Hero Section */
+.hero {
+    margin-bottom: 80px;  /* Αύξηση απόστασης κάτω από το Hero Section */
+}
+
+/* Για να έχεις μεγαλύτερο κενό μεταξύ των templates */
+.container.my-5 {
+    margin-top: 60px; /* Αύξηση κενών πριν τα templates */
+}
+
+/* Αύξηση κενών για την φόρμα */
+.container.my-5:last-child {
+    margin-top: 80px; /* Αυξάνει το κενό πριν από τη φόρμα */
+}
+/* Footer */
+footer {
+    background-color: #17a2b8; /* Το ίδιο χρώμα με το header */
+    color: white;
+    padding: 20px 0;
+    margin-top: 60px; /* Αύξηση του κενού πριν το footer */
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Για το carousel */
+.carousel-item img {
+    object-fit: contain; /* Κάνει τις εικόνες να καλύπτουν όλο το πλάτος χωρίς να παραμορφώνονται */
+    max-height: 500px; /* Ορισμός μέγιστου ύψους για τις εικόνες */
+}
+
+/* Ειδικές ρυθμίσεις για μικρές οθόνες */
+@media (max-width: 767px) {
+    .carousel-item img {
+        max-height: 300px; /* Μειώνει το ύψος στις μικρές οθόνες για καλύτερη εμφάνιση */
+    }
+}
