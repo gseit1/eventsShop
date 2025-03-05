@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Πάρτι - Προσαρμοσμένα Προσκλητήρια</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light pastel blue background color */
+            font-family: 'Sofia Sans', sans-serif;
+        }
+        header {
+            background: linear-gradient(to right, #ffcccb, #ffebcd);
+        }
+        header h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        .carousel-inner img {
+            border-radius: 10px;
+        }
+        .party-photos img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 10px;
+            border: 2px solid #ffcccb;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #ffcccb;
+            border-color: #ffcccb;
+        }
+        .btn-primary:hover {
+            background-color: #ffb6c1;
+            border-color: #ffb6c1;
+        }
+        footer {
+            background: linear-gradient(to right, #ffcccb, #ffebcd);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="text-white text-center py-5">
+        <h1>Πάρτι του Νίκου</h1>
+        <p>Σας προσκαλώ να γιορτάσουμε μαζί τα γενέθλιά μου!</p>
+    </header>
+
+    <!-- Carousel -->
+    <section class="container my-5">
+        <div id="partyCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/party1.jpg" class="d-block w-100" alt="Πάρτι 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/party2.jpg" class="d-block w-100" alt="Πάρτι 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/party3.jpg" class="d-block w-100" alt="Πάρτι 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#partyCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#partyCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Πληροφορίες Εκδήλωσης -->
+    <section class="container my-5 text-center">
+        <h2>Λεπτομέρειες Εκδήλωσης</h2>
+        <p><strong>Ημερομηνία:</strong> Σάββατο, 20 Ιουλίου 2025</p>
+        <p><strong>Ώρα:</strong> 8:00 μ.μ.</p>
+        <p><strong>Τοποθεσία:</strong> Κλαμπ "Φαντασία", Αθήνα</p>
+        <p>Ελάτε να διασκεδάσουμε και να γιορτάσουμε μαζί!</p>
+    </section>
+
+    <!-- Φωτογραφίες -->
+    <section class="container my-5 text-center">
+        <h2>Φωτογραφίες από προηγούμενα πάρτι</h2>
+        <div class="d-flex justify-content-center party-photos">
+            <img src="images/party4.jpg" alt="Πάρτι 4">
+            <img src="images/party.jpg" alt="Πάρτι 5">
+            <img src="images/party1.jpg" alt="Πάρτι 6">
+        </div>
+    </section>
+
+    <!-- Φόρμα Συμμετοχής -->
+    <section class="container my-5">
+        <h2>Επιβεβαιώστε τη Συμμετοχή σας</h2>
+        <form id="rsvpForm" method="POST" action="">
+            <div class="form-group">
+                <label for="name">Όνομα</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Αριθμός Καλεσμένων</label>
+                <input type="number" class="form-control" id="guests" name="guests" min="1" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Επιβεβαίωση</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+        <p>&copy; 2025 Πάρτι του Νίκου | Σχεδιασμός με αγάπη</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

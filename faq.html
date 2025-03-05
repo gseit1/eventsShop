@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Συχνές Ερωτήσεις - Προσαρμοσμένα Προσκλητήρια</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .faq-question {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #f8f9fa;
+        }
+
+        .faq-question:hover {
+            background-color: #e9ecef;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: -10px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+
+        .faq-answer.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-info text-white text-center py-5">
+        <h1>Συχνές Ερωτήσεις</h1>
+        <p>Βρείτε απαντήσεις στις πιο συχνές ερωτήσεις σας</p>
+    </header>
+
+    <!-- FAQ Section -->
+    <section class="container my-5">
+        <h2>Συχνές Ερωτήσεις</h2>
+        <div class="faq-question" data-toggle="modal" data-target="#faq1">
+            <span>Πόσο κοστίζουν τα προσκλητήρια;</span>
+            <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-question" data-toggle="modal" data-target="#faq2">
+            <span>Μπορώ να προσαρμόσω το σχέδιο;</span>
+            <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-question" data-toggle="modal" data-target="#faq3">
+            <span>Πόσος χρόνος χρειάζεται για την παράδοση;</span>
+            <span class="faq-icon">+</span>
+        </div>
+    </section>
+
+    <!-- FAQ Modals -->
+    <div class="modal fade" id="faq1" tabindex="-1" role="dialog" aria-labelledby="faq1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="faq1Label">Πόσο κοστίζουν τα προσκλητήρια;</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Το κόστος των προσκλητηρίων εξαρτάται από το σχέδιο, την ποσότητα και τις επιπλέον παροχές που θα επιλέξετε. Για περισσότερες πληροφορίες, παρακαλούμε επικοινωνήστε μαζί μας.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Κλείσιμο</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="faq2" tabindex="-1" role="dialog" aria-labelledby="faq2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="faq2Label">Μπορώ να προσαρμόσω το σχέδιο;</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Ναι, μπορείτε να προσαρμόσετε το σχέδιο σύμφωνα με τις προτιμήσεις σας. Προσφέρουμε διάφορες επιλογές προσαρμογής για να δημιουργήσετε το τέλειο προσκλητήριο.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Κλείσιμο</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="faq3" tabindex="-1" role="dialog" aria-labelledby="faq3Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="faq3Label">Πόσος χρόνος χρειάζεται για την παράδοση;</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Ο χρόνος παράδοσης εξαρτάται από την ποσότητα και τις επιπλέον παροχές που θα επιλέξετε. Συνήθως, η παράδοση γίνεται εντός 7-10 εργάσιμων ημερών.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Κλείσιμο</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-info text-white text-center py-4 mt-5">
+        <p>&copy; 2025 Προσαρμοσμένα Προσκλητήρια | Όλα τα δικαιώματα κατοχυρωμένα</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

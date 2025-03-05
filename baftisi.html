@@ -26,12 +26,20 @@
         <div id="baptismCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/baptismTemplate1.png" class="d-block w-100 img-fluid" alt="Baptism Template 1">
+                    <img src="images/baftisiLaptopSample.png" class="d-block w-100 img-fluid" alt="Baptism Template 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/baptismTemplate2.png" class="d-block w-100 img-fluid" alt="Baptism Template 2">
+                    <img src="images/baftisiIphoneSample.png" class="d-block w-100 img-fluid" alt="Baptism Template 2">
                 </div>
             </div>
+            
+                <div class="carousel-item ">
+                    <img src="images/baftisiLaptopSample1.png" class="d-block w-100 img-fluid" alt="Baptism Template 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/baftisiIphoneSample1.png" class="d-block w-100 img-fluid" alt="Baptism Template 2">
+                </div>
+            
             <a class="carousel-control-prev" href="#baptismCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Προηγούμενο</span>
@@ -40,6 +48,9 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Επόμενο</span>
             </a>
+        </div>
+        <div class="text-center mt-4">
+            <a href="baftisi1.html" class="btn btn-primary">Δείτε την βάπτιση  του Κώστα</a>
         </div>
     </section>
     
@@ -58,6 +69,7 @@
             <li>Εκτύπωση σε πολυτελή χαρτιά</li>
             <li>Συσκευασία με premium κουτιά</li>
         </ul>
+        <a href="#contactForm" class="btn btn-success mt-3">Το Θέλω</a>
     </section>
 
     <!-- Customer Reviews -->
@@ -76,7 +88,34 @@
             </div>
         </div>
     </section>
-
+     <!-- Form Section -->
+     <section class="container my-5" id="contactForm">
+        <h2>Υποβάλετε το Αίτημά σας</h2>
+        <form id="contactForm" method="POST"  data-netlify="true" name="contact">
+            <input type="hidden" name="contact" value="contact">
+            <div class="form-group">
+                <label for="name">Όνομα</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="eventType">Τύπος Εκδήλωσης</label>
+                <select class="form-control" id="eventType" name="eventType" required>
+                    <option value="Γάμος">Γάμος</option>
+                    <option value="Βάπτιση">Βάπτιση</option>
+                    <option value="Πάρτι Γενεθλίων">Πάρτι Γενεθλίων</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Μήνυμα</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Αποστολή</button>
+        </form>
+    </section>
     <!-- Footer -->
     <footer class="bg-info text-white text-center py-4 mt-5">
         <p>&copy; 2025 Προσαρμοσμένα Προσκλητήρια | Όλα τα δικαιώματα κατοχυρωμένα</p>

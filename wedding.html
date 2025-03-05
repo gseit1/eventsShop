@@ -87,7 +87,8 @@
     <!-- Form Section -->
     <section class="container my-5" id="contactForm">
         <h2>Υποβάλετε το Αίτημά σας</h2>
-        <form id="contactForm" method="POST" action="https://formspree.io/f/mnqzpzek">
+        <form id="contactForm" method="POST"  data-netlify="true" name="contact">
+            <input type="hidden" name="contact" value="contact">
             <div class="form-group">
                 <label for="name">Όνομα</label>
                 <input type="text" class="form-control" id="name" name="name" required>

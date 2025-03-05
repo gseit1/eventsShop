@@ -159,7 +159,7 @@ header {
 
 /* Mobile friendly adjustments */
 @media (max-width: 768px) {
-    .steps {
+    .steps-container {
         flex-direction: column;
     }
 
@@ -224,7 +224,11 @@ footer a:hover {
     object-fit: contain; /* Κάνει τις εικόνες να καλύπτουν όλο το πλάτος χωρίς να παραμορφώνονται */
     max-height: 500px; /* Ορισμός μέγιστου ύψους για τις εικόνες */
 }
-
+.carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: black;
+            background-size: 100%, 100%;
+        }
 /* Ειδικές ρυθμίσεις για μικρές οθόνες */
 @media (max-width: 767px) {
     .carousel-item img {

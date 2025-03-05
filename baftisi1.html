@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Πρόσκληση Βάφτισης - Κώστας</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light pastel blue background color */
+            font-family: 'Sofia Sans', sans-serif;
+        }
+        header {
+            background: linear-gradient(to right, #ffcccb, #ffebcd);
+        }
+        header h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        .carousel-inner img {
+            border-radius: 10px;
+        }
+        .parent-photos img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 10px;
+            border: 2px solid #ffcccb;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #ffcccb;
+            border-color: #ffcccb;
+        }
+        .btn-primary:hover {
+            background-color: #ffb6c1;
+            border-color: #ffb6c1;
+        }
+        footer {
+            background: linear-gradient(to right, #ffcccb, #ffebcd);
+        }
+    </style>
+</head>
+<body>
+    <header class="text-white text-center py-5">
+        <h1>Η Βάφτιση του Κώστα</h1>
+        <p>Σας προσκαλούμε να γιορτάσετε μαζί μας αυτή τη χαρούμενη μέρα!</p>
+    </header>
+
+    <!-- Carousel -->
+    <section class="container my-5">
+        <div id="baptismCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/baby.jpg" class="d-block w-100" alt="Πρόσκληση Βάφτισης 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/baptism2.jpg" class="d-block w-100" alt="Πρόσκληση Βάφτισης 2">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#baptismCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#baptismCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Πληροφορίες Εκδήλωσης -->
+    <section class="container my-5 text-center">
+        <h2>Λεπτομέρειες Εκδήλωσης</h2>
+        <p><strong>Ημερομηνία:</strong> Κυριακή, 15 Ιουνίου 2025</p>
+        <p><strong>Ώρα:</strong> 12:00 μ.μ.</p>
+        <p><strong>Τοποθεσία:</strong> Ιερός Ναός Αγίου Νικολάου, Αθήνα</p>
+        <p>Μετά τη βάφτιση, θα ακολουθήσει δεξίωση στο κτήμα "Λευκός Κύκνος".</p>
+    </section>
+
+    <!-- Φωτογραφίες Γονιών -->
+    <section class="container my-5 text-center">
+        <h2>Οι Περήφανοι Γονείς</h2>
+        <div class="d-flex justify-content-center parent-photos">
+            <img src="images/man.jpg" alt="Πατέρας">
+            <img src="images/woman.jpg" alt="Μητέρα">
+        </div>
+    </section>
+
+    <!-- Φόρμα Συμμετοχής -->
+    <section class="container my-5">
+        <h2>Επιβεβαιώστε τη Συμμετοχή σας</h2>
+        <form id="rsvpForm" method="POST" action="">
+            <div class="form-group">
+                <label for="name">Όνομα</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Αριθμός Καλεσμένων</label>
+                <input type="number" class="form-control" id="guests" name="guests" min="1" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Επιβεβαίωση</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+        <p>&copy; 2025 Πρόσκληση Βάφτισης Κώστα | Σχεδιασμός με αγάπη</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
