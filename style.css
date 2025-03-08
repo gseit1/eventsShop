@@ -235,3 +235,21 @@ footer a:hover {
         max-height: 300px; /* Μειώνει το ύψος στις μικρές οθόνες για καλύτερη εμφάνιση */
     }
 }
+
+.view-all-templates {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-all-templates:hover {
+    background-color: #9eb1c4;
+}

@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Προσαρμοσμένα Προσκλητήρια</title>
+    <meta name="description" content="Δημιουργήστε μοναδικά προσκλητήρια γάμου, βάφτισης και γενεθλίων!">
+    <meta name="keywords" content="προσκλητήρια, γάμος, βάφτιση, γενέθλια, custom invitations">
+
     <!--Web Favicon DIsplay-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,17 +16,19 @@
 
     <meta name="google-adsense-account" content="ca-pub-7512218252452680">
 
-     <!-- Open Graph Meta Tags -->
-     <meta property="og:title" content="Προσαρμοσμένα Προσκλητήρια">
-     <meta property="og:description" content="Δημιουργήστε το τέλειο προσκλητήριο για την εκδήλωσή σας!">
-     <meta property="og:image" content="https://drive.google.com/file/d/1-aItJQ3wyEX9CvnOg2MdvJoYw26iZz8c/view?usp=sharing">
-     <meta property="og:url" content="https://eprosklitiria.netlify.app/">
-     <meta property="og:type" content="website">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Προσαρμοσμένα Προσκλητήρια">
+    <meta property="og:description" content="Δημιουργήστε το τέλειο προσκλητήριο για την εκδήλωσή σας!">
+    <meta property="og:image"
+        content="https://drive.google.com/file/d/1-aItJQ3wyEX9CvnOg2MdvJoYw26iZz8c/view?usp=sharing">
+    <meta property="og:url" content="https://eprosklitiria.netlify.app/">
+    <meta property="og:type" content="website">
 
     <!--Font family styles-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+        rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,47 +38,112 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        .view-all-templates {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .view-all-templates:hover {
+            background-color: #0056b3;
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Fade-in effect */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        /* Parallax effect */
+        .parallax {
+            background-image: url('images/heroImg1.jpg');
+            height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="favicon-32x32.png" alt="">
+        <a class="navbar-brand" href="#">eprosklitiria</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Αρχική</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="templates.html">Templates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactForm">Κάνε Αίτηση</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <!-- Αρχική Σελίδα (Hero Section) -->
-    <header class="hero bg-info text-white text-center py-5">
+    <header class="hero bg-info text-white text-center py-5 parallax">
         <div class="container">
             <h1 class="display-4">Προσαρμοσμένα Προσκλητήρια</h1>
             <p class="lead">Δημιουργήστε το τέλειο προσκλητήριο για την εκδήλωσή σας!</p>
         </div>
-        
     </header>
-    <div class="catch-line">
+    <div class="catch-line fade-in-section">
         <p class="fade-in">Πες αντίο στην παραδοσιακή πρόσκληση και γίνε ένα με το μέλλον...ΠΡΩΤΟΣ!</p>
         <img src="images/writeAnime.gif" alt="">
-       
     </div>
-    
- <div class="steps">
-    <h2>Γρήγορο, εύκολο και αποτελεσματικό!</h2>
-    <div class="steps-container">
-        <div class="step">
-            <img src="images/templatesIcon.gif" alt="Step 1: Choose a Design">
-            <h3>Διάλεξε το σχέδιο!</h3>
-            <p>Επιλέξτε από μια ποικιλία όμορφων σχεδίων για την πρόσκλησή σας.</p>
-        </div>
-        <div class="step">
-            <img src="images/editingIcon.png" alt="Step 2: Customize It">
-            <h3>Εξατομίκευσε το!</h3>
-            <p>Προσαρμόστε το σχέδιο με τα δικά σας στοιχεία και μηνύματα.</p>
-        </div>
-        <div class="step">
-            <img src="images/rsvpIcon.png" alt="Step 3: Gather Your Guests">
-            <h3>Μάζεψε τους καλεσμένους σου!</h3>
-            <p>Στείλτε τις προσκλήσεις και συγκεντρώστε τους καλεσμένους σας.</p>
+
+    <div class="steps fade-in-section">
+        <h2>Γρήγορο, εύκολο και αποτελεσματικό!</h2>
+        <div class="steps-container">
+            <div class="step">
+                <img src="images/templatesIcon.gif" alt="Step 1: Choose a Design">
+                <h3>Διάλεξε το σχέδιο!</h3>
+                <p>Επιλέξτε από μια ποικιλία όμορφων σχεδίων για την πρόσκλησή σας.</p>
+            </div>
+            <div class="step">
+                <img src="images/editingIcon.png" alt="Step 2: Customize It">
+                <h3>Εξατομίκευσε το!</h3>
+                <p>Προσαρμόστε το σχέδιο με τα δικά σας στοιχεία και μηνύματα.</p>
+            </div>
+            <div class="step">
+                <img src="images/rsvpIcon.png" alt="Step 3: Gather Your Guests">
+                <h3>Μάζεψε τους καλεσμένους σου!</h3>
+                <p>Στείλτε τις προσκλήσεις και συγκεντρώστε τους καλεσμένους σας.</p>
+            </div>
         </div>
     </div>
-    
-</div>
-    
+
     <!-- Templates -->
-    <section class="container my-6">
+    <section id="templates" class="container my-6 fade-in-section">
         <h2>Διαθέσιμα Templates</h2>
         <div class="row">
             <div class="col-md-4">
@@ -109,11 +179,12 @@
                     </div>
                 </div>
             </div>
+            <a class="view-all-templates" href="templates.html">Δες όλα τα templates</a>
         </div>
     </section>
 
-     <!-- FAQ Section -->
-     <section class="container my-6">
+    <!-- FAQ Section -->
+    <section class="container my-6 fade-in-section">
         <h2>Συχνές Ερωτήσεις</h2>
         <div class="text-center mt-4">
             <a href="faq.html" class="btn btn-primary">Δείτε τις Συχνές Ερωτήσεις</a>
@@ -121,13 +192,14 @@
     </section>
 
     <!-- Φόρμα Αιτήματος (Flexbox Layout) -->
-    <section class="container my-5">
+    <section class="container my-5 fade-in-section" id="contactForm">
         <h2>Υποβάλετε το Αίτημά σας</h2>
-        <p >Μην χάσετε την ευκαιρία να δημιουργήσετε το τέλειο προσκλητήριο για την εκδήλωσή σας. Συμπληρώστε τη φόρμα και θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατό!</p>
+        <p>Μην χάσετε την ευκαιρία να δημιουργήσετε το τέλειο προσκλητήριο για την εκδήλωσή σας. Συμπληρώστε τη φόρμα
+            και θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατό!</p>
         <div class="row">
             <!-- Left Side (Φόρμα) -->
             <div class="col-md-6">
-                <form id="contactForm" method="POST"  data-netlify="true" name="contact">
+                <form id="contactForm" method="POST" data-netlify="true" name="contact">
                     <input type="hidden" name="form-name" value="contact">
                     <div class="form-group">
                         <label for="name">Όνομα</label>
@@ -151,29 +223,30 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Αποστολή</button>
                     <input type="hidden" name="contact" value="contact">
-
                 </form>
             </div>
-    
+
             <!-- Right Side (Γιατί να μας εμπιστευτείτε) -->
             <div class="col-md-6">
                 <h3>Γιατί να μας εμπιστευτείτε;</h3>
-                <p>Προσφέρουμε μοναδικά και προσαρμοσμένα προσκλητήρια για κάθε εκδήλωση, που ανταποκρίνονται στις ανάγκες σας. Είτε πρόκειται για γάμο, βάπτιση ή πάρτι γενεθλίων, μπορούμε να δημιουργήσουμε κάτι ξεχωριστό για εσάς.</p>
-                <p>Με χρόνια εμπειρίας στον τομέα, η ομάδα μας είναι αφοσιωμένη στην παροχή υψηλής ποιότητας και εξαιρετικού σχεδιασμού προϊόντων.</p>
+                <p>Προσφέρουμε μοναδικά και προσαρμοσμένα προσκλητήρια για κάθε εκδήλωση, που ανταποκρίνονται στις
+                    ανάγκες σας. Είτε πρόκειται για γάμο, βάπτιση ή πάρτι γενεθλίων, μπορούμε να δημιουργήσουμε κάτι
+                    ξεχωριστό για εσάς.</p>
+                <p>Με χρόνια εμπειρίας στον τομέα, η ομάδα μας είναι αφοσιωμένη στην παροχή υψηλής ποιότητας και
+                    εξαιρετικού σχεδιασμού προϊόντων.</p>
             </div>
         </div>
     </section>
-<!-- Footer -->
-<footer class="bg-info text-white text-center py-4 mt-5">
-    <p>&copy; 2025 Προσαρμοσμένα Προσκλητήρια | Όλα τα δικαιώματα κατοχυρωμένα</p>
-    <p>Ακολουθήστε μας:</p>
-    <div>
-        <a href="#" class="text-white mx-2">Facebook</a>
-        <a href="#" class="text-white mx-2">Instagram</a>
-        <a href="#" class="text-white mx-2">Twitter</a>
-    </div>
-</footer>
-
+    <!-- Footer -->
+    <footer class="bg-info text-white text-center py-4 mt-5">
+        <p>&copy; 2025 Προσαρμοσμένα Προσκλητήρια | Όλα τα δικαιώματα κατοχυρωμένα</p>
+        <p>Ακολουθήστε μας:</p>
+        <div>
+            <a href="#" class="text-white mx-2">Facebook</a>
+            <a href="#" class="text-white mx-2">Instagram</a>
+            <a href="#" class="text-white mx-2">Twitter</a>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS, Popper.js, jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -182,6 +255,30 @@
 
     <!-- Custom JS -->
     <script src="script.js"></script>
+    <script>
+        // Fade-in effect
+        const faders = document.querySelectorAll('.fade-in-section');
+
+        const appearOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('is-visible');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
 </body>
 
 </html>
